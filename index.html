@@ -6,31 +6,39 @@
     <style>
         .nbtn{
             width: 100%;
+            height: 100%;
         }
         .obtn{
             width: 100%;
+            height: 100%;
         }
         .cbtn{
             width: 100%;
+            height: 100%;
         }
         .abtn{
             width: 100%;
+            height: 100%;
+        }
+        .result{
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
 <form action="">
-        <table border="5" style="">
+        <table border="10" style="width: 500px; height: 500px">
             <tr>
                 <th colspan="4">
-                    <input type="text" id="Result" value="">
+                    <input class="result" type="text" id="Result" value="" style="font-size: xx-large">
                 </th>
             </tr>
             <tr>
                 <td><input class="nbtn" type="button" id="1" value="1" onclick="Result.value+=this.value"></td>
                 <td><input class="nbtn" type="button" id="2" value="2" onclick="Result.value+=this.value"></td>
                 <td><input class="nbtn" type="button" id="3" value="3" onclick="Result.value+=this.value"></td>
-                <td><input class="obtn" type="button" id="addition" value="+" onclick="Result.value+=this.value"></td>
+                <td><input class="obtn" type="button" id="addition" value="+" onclick="listen();Result.value+=this.value"></td>
             </tr>
             <tr>
                 <td><input class="nbtn" type="button" id="4" value="4" onclick="Result.value+is.value"></td>
@@ -51,7 +59,7 @@
                 <td><input class="obtn" type="button" id="division" value="/" onclick="Result.value+=this.value"></td>
             </tr>
         </table>
-
+    <script src="script.js"></script>
 </form>
 </body>
 </html>
